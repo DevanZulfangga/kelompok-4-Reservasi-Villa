@@ -6,7 +6,7 @@ Website sederhana untuk Reservasi/booking Villa, dibuat sebagai proyek kelompok 
 
 ## 👨‍💻 Tim Pengembang
 
-- **Frontend Developer & GitHub**: [Devan Zulfangga]
+- **Frontend Developer & GitHub**: Devan Zulfangga
 - **Tester**:
   - Dede Ardiansah
   - Muhamad Nabil Arrafi
@@ -18,10 +18,9 @@ Website sederhana untuk Reservasi/booking Villa, dibuat sebagai proyek kelompok 
 
 - Register & Login
 - Halaman home 
-- Form input ID pemain & metode pembayaran
-- Keranjang pembelian
+- Halaman villa
+- Halaman pembayaran villa
 - Validasi input form
-- Desain modern & responsif
 
 ---
 
