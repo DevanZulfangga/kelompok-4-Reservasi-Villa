@@ -19,7 +19,7 @@ Website sederhana untuk Reservasi/booking Villa, dibuat sebagai proyek kelompok 
 - Register & Login
 - Halaman home 
 - Halaman villa
-- Halaman pembayaran villa
+- Halaman pembayaran villa & metode pembayaran
 - Validasi input form
 
 ---
