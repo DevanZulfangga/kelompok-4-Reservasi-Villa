@@ -69,5 +69,15 @@ Buka `index.html` di browser
 
 ###  Tampilan Aplikasi
 ---
-![Halaman Utam](assets/Dasboard.jpeg)
+
+## Halaman Utam
+![Halaman Utam](assets/Dashboard.jpeg)
+
+
+## Halaman Register
+![Register](assets/Register.jpeg)
+
+
+## Halaman Login
+![Login](assets/Login.jpeg)
 
