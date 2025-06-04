@@ -7,28 +7,22 @@ Metode: Equivalence Partitioning dan Boundary Value Analysis
 | No | Test Case                    | Input Email                                 | Input Password | Expected Output             | Model           |
 | -- | ---------------------------- | ------------------------------------------- | -------------- | --------------------------- | --------------- |
 | 1  | Valid login                  | [Devan@gmail.com](mailto:Devan@gmail.com) | password123    | Login berhasil              | Equivalence     |
-| 2  | Kosongkan email              | *(kosong)*                                  | password123    | Harap isi Email Anda    | Boundary/Robust |
-| 3  | Kosongkan password           | [Devan@gmail.com](mailto:Devan@gmail.com) | *(kosong)*     | Harap isi pasword Anda  | Boundary/Robust |
-| 4  | Email tidak valid (tanpa @)  | userexample.com                             | password123    | Harap masukan email anda dengan benar   | Equivalence     |
-| 5  | Password salah               | [user@example.com](mailto:user@example.com) | wrongpass      | Error: Login gagal          | Equivalence     |
+| 2  | Email Kosong              |                            | password123    | Harap isi Email Anda    | Boundary/Robust |
+| 3  | Password Kosong            | [Devan@gmail.com](mailto:Devan@gmail.com) |   | Harap isi pasword Anda  | Boundary/Robust |
+| 4  | Email tidak valid (tanpa @)  | dede.com                             | password123    | Format Email tidak valid   | Equivalence     |
+| 5  | Password salah               | [Devan@gmail.com](mailto:Devan@gmail.com) | 545    | Password salah         | Equivalence     |
 
 # REGISTER TEST CASE
-| No | Test Case                    | Email                                 | Password   | Konfirmasi | Expected Output                  | Model       |
-| -- | ---------------------------- | ------------------------------------- | ---------- | ---------- | -------------------------------- | ----------- |
-| 1  | Input valid semua            | [user@test.com](mailto:user@test.com) | Test123!   | Test123!   | Register sukses                  | Equivalence |
-| 2  | Email kosong                 | *(kosong)*                            | Test123!   | Test123!   | Error: Email wajib diisi         | Robustness  |
-| 3  | Password kosong              | [user@test.com](mailto:user@test.com) | *(kosong)* | *(kosong)* | Error: Password wajib            | Robustness  |
-| 4  | Format email tidak valid     | user.com                              | Pass123    | Pass123    | Error: Format salah              | Equivalence |
 
-# CART PAGE ( USER ID & PEMBAYARAN) TEST CASE
-| No | Test Case                                 | User ID     | Payment Method | Expected Output                                         | Model          |
+| No | Test Case                    | Email                                 | Password | Expected Output             | Model           |
+| -- | ---------------------------- | ------------------------------------------- | -------------- | --------------------------- | --------------- |
+| 1  | Register Valid                  | [Devan@gmail.com](mailto:Devan@gmail.com) | password123    | Register berhasil              | Equivalence     |
+| 2  | Duplikat Data ( data sudah terdaftar ) |   [Devan@gmail.com](mailto:Devan@gmail.com)  | password123    | Email Telah Terdaftar    | Boundary/Robust |
+
+# CART PAGE ( UPEMBAYARAN) TEST CASE
+| No | Test Case                                 | User    | Payment Method | Expected Output                                         | Model          |
 | -- | ----------------------------------------- | ----------- | -------------- | ------------------------------------------------------- | -------------- |
-| 1  | Tambah 1 User ID valid                    | 123456789   | QRIS           | Berhasil menambahkan 1 user                             | Equivalence    |
-| 2  | User ID kosong                            | (kosong)    | QRIS           | Error: Silakan isi User ID terlebih dahulu!             | Robustness     |
-| 3  | User ID < 9 digit                         | 12345678    | QRIS           | Error: User ID minimal 9 digit!                         | BVA            |
-| 4  | User ID > 10 digit                        | 12345678901 | QRIS           | Error: User ID maksimal 10 digit!                       | BVA            |
-| 5  | Duplikat User ID                          | 123456789   | QRIS           | Error: User ID sudah ditambahkan sebelumnya!            | Decision Table |
-| 6  | Tambah lebih dari 5 User ID               | >5 data     | QRIS           | Error: Maksimal hanya 5 User ID                         | Robustness     |
-| 7  | User ID valid, tapi jumlah diamond kosong | 123456789   | QRIS           | Error: Belum memasukkan jumlah diamonds!                     | Equivalence    |
-| 8  | Tidak memilih metode pembayaran           | 123456789   | (kosong)       | Error: Mohon memilih metode pembayaran terlebih dahulu! | Robustness     |
-| 9  | Generate invoice tanpa email              | 123456789   | QRIS           | Error: Mohon masukkan email pengiriman invoice!         | Robustness     |
+| 1  | tanggal booking                  | DEDE   | Transfer Bank           | berhasil menambahkan pesanan | Equivalence    |
+| 2  | Lama sewa                            | DEDE    | Transfer Bank           | berhasil menambahkan pesanan             | Robustness     |
+| 3  | Upload bukti pembayaran | DEDE    |      -     | Pembayaran Berhasil                         | BVA            |
+| 4  | Tidak mengupload bukti pmebayaran               | 12345678901 | QRIS           | Pembayaran gagal                       | BVA            |
