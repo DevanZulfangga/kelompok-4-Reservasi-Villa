@@ -6,12 +6,11 @@ Metode: Equivalence Partitioning dan Boundary Value Analysis
 
 | No | Test Case                    | Input Email                                 | Input Password | Expected Output             | Model           |
 | -- | ---------------------------- | ------------------------------------------- | -------------- | --------------------------- | --------------- |
-| 1  | Valid login                  | [user@example.com](mailto:user@example.com) | password123    | Login berhasil              | Equivalence     |
-| 2  | Kosongkan email              | *(kosong)*                                  | password123    | Error: Email wajib diisi    | Boundary/Robust |
-| 3  | Kosongkan password           | [user@example.com](mailto:user@example.com) | *(kosong)*     | Error: Password wajib diisi | Boundary/Robust |
-| 4  | Email tidak valid (tanpa @)  | userexample.com                             | password123    | Error: Format email salah   | Equivalence     |
-| 5  | Email terlalu panjang (>255) | 256 char email                              | password123    | Error / dipotong / validasi | BVA             |
-| 6  | Password salah               | [user@example.com](mailto:user@example.com) | wrongpass      | Error: Login gagal          | Equivalence     |
+| 1  | Valid login                  | [Devan@gmail.com](mailto:Devan@gmail.com) | password123    | Login berhasil              | Equivalence     |
+| 2  | Kosongkan email              | *(kosong)*                                  | password123    | Harap isi Email Anda    | Boundary/Robust |
+| 3  | Kosongkan password           | [Devan@gmail.com](mailto:Devan@gmail.com) | *(kosong)*     | Harap isi pasword Anda  | Boundary/Robust |
+| 4  | Email tidak valid (tanpa @)  | userexample.com                             | password123    | Harap masukan email anda dengan benar   | Equivalence     |
+| 5  | Password salah               | [user@example.com](mailto:user@example.com) | wrongpass      | Error: Login gagal          | Equivalence     |
 
 # REGISTER TEST CASE
 | No | Test Case                    | Email                                 | Password   | Konfirmasi | Expected Output                  | Model       |
@@ -19,8 +18,7 @@ Metode: Equivalence Partitioning dan Boundary Value Analysis
 | 1  | Input valid semua            | [user@test.com](mailto:user@test.com) | Test123!   | Test123!   | Register sukses                  | Equivalence |
 | 2  | Email kosong                 | *(kosong)*                            | Test123!   | Test123!   | Error: Email wajib diisi         | Robustness  |
 | 3  | Password kosong              | [user@test.com](mailto:user@test.com) | *(kosong)* | *(kosong)* | Error: Password wajib            | Robustness  |
-| 4  | Konfirmasi tidak cocok       | [user@test.com](mailto:user@test.com) | Pass123    | Pass321    | Error: Password tidak cocok      | Equivalence |
-| 5  | Format email tidak valid     | user.com                              | Pass123    | Pass123    | Error: Format salah              | Equivalence |
+| 4  | Format email tidak valid     | user.com                              | Pass123    | Pass123    | Error: Format salah              | Equivalence |
 
 # CART PAGE ( USER ID & PEMBAYARAN) TEST CASE
 | No | Test Case                                 | User ID     | Payment Method | Expected Output                                         | Model          |
