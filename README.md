@@ -6,9 +6,9 @@ Website sederhana untuk Reservasi/booking Villa, dibuat sebagai proyek kelompok 
 
 ## 👨‍💻 Tim Pengembang
 
-- **Frontend Developer & GitHub**: Devan Zulfangga
+- **Frontend Developer & GitHub**: Dede Ardiansah
 - **Tester**:
-  - Dede Ardiansah
+  - Devan Zulfangga
   - Muhamad Nabil Arrafi
   - Sammun Hakeki Muchlis
 
@@ -27,7 +27,7 @@ Website sederhana untuk Reservasi/booking Villa, dibuat sebagai proyek kelompok 
 ##  Pengujian
 
 ###  Black Box Testing  
-**Dilakukan oleh**: Sammun Hakeki Muchlis
+**Dilakukan oleh**: Devan Zulfangga
 
 **Contoh skenario uji**:
 - Input kosong pada form register
@@ -37,7 +37,7 @@ Website sederhana untuk Reservasi/booking Villa, dibuat sebagai proyek kelompok 
 ---
 
 ###  White Box Testing  
-**Dilakukan oleh**: Dede Ardiansah
+**Dilakukan oleh**: Sammun Hakeki Muchlis
 
 **Cakupan**:
 - Desk Checking
