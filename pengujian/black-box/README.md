@@ -1,3 +1,3 @@
 ## Flow Chart Login & Register
 
-![flow chart].(flow chart/L&G.jpeg)
+![Login&Register](assets/pemabayarn.jpeg)
