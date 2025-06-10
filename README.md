@@ -4,7 +4,7 @@ Website sederhana untuk Reservasi/booking Villa, dibuat sebagai proyek kelompok 
 
 ---
 
-## 👨‍💻 Tim Pengembang
+## 👨‍💻 Anggota Kelompok
 
 - **Frontend Developer & GitHub**: Dede Ardiansah
 - **Tester**:
