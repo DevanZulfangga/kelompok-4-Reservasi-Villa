@@ -82,5 +82,5 @@ Buka `index.html` di browser
 
 
 ## Halaman Boking
-![Halaman Boking](assets/Halaman.png)
+![Halaman Boking](assets/Boking.jpeg)
 
