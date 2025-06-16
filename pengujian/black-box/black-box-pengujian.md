@@ -11,6 +11,7 @@
 | 1  | Registrasi valid   | [user@example.com](mailto:user@example.com) | Password valid, data lengkap | Registrasi berhasil       | Equivalence Partitioning |
 | 2  | Email kosong       | (kosong)                                    | Password valid, data lengkap | Error: Email wajib diisi  | Boundary Value Analysis  |
 | 3  | Format email salah | userexample.com                             | Password valid               | Error: Format email salah | Equivalence Partitioning |
+| 4  | Duplikat data      | userexample.com                             | Password valid               | Email Sudah Terdaftar     | Equivalence Partitioning |
 
 
 #### 🔧 Pengujian Login:
@@ -29,8 +30,8 @@
 | -- | --------------------- |  ------------------------ | ---------------------------- | ------------------------ |
 | 8  | Booking valid         |  Tanggal valid, jam valid | Booking berhasil             | Equivalence Partitioning |
 | 9  | Tanggal lampau        |  Tanggal lampau           | Error: Tanggal tidak valid   | Boundary Value Analysis  |
-| 10 | Tanggal kosong        |  (kosong)                 | Error: Tanggal wajib diisi   | Boundary Value Analysis  |
-| 11 | Lama sewa 0 jam       |  0 jam                    | Error: Lama sewa tidak valid | Boundary Value Analysis  |
+| 10 | Tanggal kosong        |  (kosong)                 | Error: Data tidak lengkap    | Boundary Value Analysis  |
+| 11 | Lama sewa 0 jam       |  0 jam                    | Error: Data tidak lengkap    | Boundary Value Analysis  |
 | 12 | Booking SQL Injection |  SQL script di input      | Error / Ditolak              | Robustness Testing       |
 
 
