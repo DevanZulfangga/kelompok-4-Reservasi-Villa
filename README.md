@@ -1,7 +1,7 @@
 
 ---
 
-# ✅ * Dokumentasi Akhir Web Reservasi Villa (Kelompok 4)*
+# * Web Reservasi Villa (Kelompok 4)*
 
 ---
 
@@ -105,21 +105,17 @@ Website aplikasi *Reservasi & Booking Villa* sebagai proyek kelompok, dengan pen
 
 ---
 
-## 🚀 Cara Menjalankan
+## 🚀 Cara Menjalankan Aplikasi
 
-1️⃣ Clone project ke folder `htdocs` (XAMPP)
-2️⃣ Import database sesuai struktur
-3️⃣ Cek koneksi database di `functions.php`
-4️⃣ Pastikan library `PHPMailer` & `Twilio` sudah terinstall
-5️⃣ Jalankan via browser: `http://localhost/nama-folder/index.php`
-
----
-
-✅ **SELESAI — Inilah dokumentasi final kamu yang paling lengkap & akurat.**
+1. **Clone project** ke folder `htdocs` (jika menggunakan XAMPP).
+2. **Import database** ke MySQL sesuai dengan struktur yang disediakan.
+3. **Cek koneksi database** di file `functions.php` dan sesuaikan konfigurasi (host, user, password, nama database).
+4. **Pastikan library eksternal sudah terpasang:**
+   - `PHPMailer`
+   - `Twilio`
+5. **Jalankan aplikasi** melalui browser:  http://localhost/nama-folder/index.php
 
 ---
-
-
 
 ## Tampilan Halaman
 
