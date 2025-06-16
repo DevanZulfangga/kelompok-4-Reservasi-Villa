@@ -73,23 +73,31 @@ Mengidentifikasi jalur logika utama dan alternatif
 Menyusun jalur eksekusi berdasarkan skenario uji
 
 ##🔄 Jalur Logika yang Diuji (Contra flow)
+💳 Control Flow – Fitur Pemesanan (ASCII Diagram)
 
 Start
- ↓
+↓
 Cek input kosong?
- ├─ Ya → Tampilkan error + redirect
- └─ Tidak → Simpan ke DB
-         ↓
-   Redirect ke halaman pembayaran
-         ↓
-       End
-dan
+├─ Ya → Tampilkan error + redirect kembali
+└─ Tidak → Simpan data ke database
+↓
+Redirect ke halaman pembayaran
+↓
+End
 
-1. Start
-2. Cek input:
-   - Jika kosong → tampilkan error
-   - Jika valid → simpan ke DB → redirect ke pembayaran
-3. End
+🧾 Control Flow – Fitur Pembayaran (ASCII Diagram)
+
+Start
+  ↓
+Cek apakah file upload kosong?
+  ├─ Ya   → Tampilkan error + redirect kembali
+  └─ Tidak → Simpan file
+                ↓
+        Update status pembayaran di database
+                ↓
+        Redirect ke halaman konfirmasi
+                ↓
+              End
 
 
 ##🔄 Jalur Logika yang Diuji (basc pasth)
