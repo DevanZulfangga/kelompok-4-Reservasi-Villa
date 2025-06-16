@@ -41,7 +41,7 @@ Menelusuri alur logika fitur reset password, mengidentifikasi jalur normal dan e
 
 --
 
-## 📋 Formal Inspections - Reset Passwor
+## 📋 Formal Inspections - Reset Password
 
 Tujuan:
 Melakukan pemeriksaan sistematis terhadap kode reset_password.php, lupa_sandi.php, dan functions.php untuk mengecek kesesuaian dengan standar keamanan, struktur logika, dan kelengkapan validasi input/output.
@@ -57,21 +57,22 @@ Melakukan pemeriksaan sistematis terhadap kode reset_password.php, lupa_sandi.ph
 | 7  | Feedback error user-friendly         | ✅      | Sudah pakai SweetAlert (user-friendly)                                |
 | 8  | Redirect setelah sukses              | ✅      | Redirect ke `login.php` setelah reset sukses                          |
 
+--
 
-📘 Laporan White Box Testing: Fitur Pemesanan & Pembayaran
+##📘 Laporan White Box Testing: Fitur Pemesanan & Pembayaran
 
-🎯 Tujuan:
+##🎯 Tujuan:
 Melakukan pengujian white box pada fitur pemesanan dan pembayaran menggunakan metode:
 Control Flow Testing
 Basic Path Testing
 
-🔍 Metodologi:
+##🔍 Metodologi:
 Testing dilakukan dengan pendekatan desk checking dan white box, dengan:
 Menelusuri struktur kontrol program (if, while, input → proses → output)
 Mengidentifikasi jalur logika utama dan alternatif
 Menyusun jalur eksekusi berdasarkan skenario uji
 
-🔄 Jalur Logika yang Diuji (Control Flow)
+##🔄 Jalur Logika yang Diuji (Control Flow)
 💳 Jalur Logika Pemesanan
 | No | Skenario Input          | Jalur Eksekusi                        | Output                 |
 | -- | ----------------------- | ------------------------------------- | ---------------------- |
