@@ -72,7 +72,27 @@ Menelusuri struktur kontrol program (if, while, input → proses → output)
 Mengidentifikasi jalur logika utama dan alternatif
 Menyusun jalur eksekusi berdasarkan skenario uji
 
-##🔄 Jalur Logika yang Diuji (Control Flow)
+##🔄 Jalur Logika yang Diuji (Contra flow)
+
+Start
+ ↓
+Cek input kosong?
+ ├─ Ya → Tampilkan error + redirect
+ └─ Tidak → Simpan ke DB
+         ↓
+   Redirect ke halaman pembayaran
+         ↓
+       End
+dan
+
+1. Start
+2. Cek input:
+   - Jika kosong → tampilkan error
+   - Jika valid → simpan ke DB → redirect ke pembayaran
+3. End
+
+
+##🔄 Jalur Logika yang Diuji (basc pasth)
 💳 Jalur Logika Pemesanan
 | No | Skenario Input          | Jalur Eksekusi                        | Output                 |
 | -- | ----------------------- | ------------------------------------- | ---------------------- |
