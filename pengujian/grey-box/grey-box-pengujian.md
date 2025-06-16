@@ -5,14 +5,14 @@
 
 Tujuan: Menguji kombinasi input secara sistematis agar semua kombinasi penting diuji tanpa pengujian yang berlebihan.
 
-| No | Email              | Password                                      | Tanggal Booking                                    | File upload                                           | Hasil             |
-| -- | ---------------------- | ----------------------------------------- | -------------------------------------------------------------- | --------------------------------------------------------- |--------------------------------------------------------- |
-| 1  | Valid   | valid  |     valid              | Valid (.jpg) | Booking Sukses
-| 2  | Kosong  | Valid  |     Valid               | Valid (.jpg) | Eror:Email Wajid diisi
-| 3  | Valid   | Kosong | Valid | Valid (.jpg) | Eror:password wajib diisi
-| 4  | Valid   | Kosong | Valid | Valid (.jpg) | Eror:password wajib diisi
-| 5  | Valid   | Kosong | Valid | Valid (.exe) | Eror:File ditolak
-| 6  | InValid | Kosong | Valid | Valid (.jpg) | Eror:Format email salah
+| No | Email   | Password | Tanggal Booking | File Upload  | Hasil                       |
+| -- | ------- | -------- | --------------- | ------------ | --------------------------- |
+| 1  | Valid   | Valid    | Valid           | Valid (.jpg) | Booking Sukses              |
+| 2  | Kosong  | Valid    | Valid           | Valid (.jpg) | Error: Email wajib diisi    |
+| 3  | Valid   | Kosong   | Valid           | Valid (.jpg) | Error: Password wajib diisi |
+| 4  | Valid   | Kosong   | Valid           | Valid (.jpg) | Error: Password wajib diisi |
+| 5  | Valid   | Kosong   | Valid           | Valid (.exe) | Error: File ditolak         |
+| 6  | Invalid | Kosong   | Valid           | Valid (.jpg) | Error: Format email salah   |
 
 
 
