@@ -22,11 +22,11 @@ Tujuan: Menguji integrasi antar modul, apakah data antar modul saling terhubung 
 
 | **No** | **Modul**  | **Terkoneksi Ke** | **Status** |
 | ------ | ---------- | ----------------- | ---------- |
-| 1      | Register   | Login             | OK         |
-| 2      | Login      | Booking           | OK         |
-| 3      | Booking    | Pembayaran        | OK         |
-| 4      | Pembayaran | Riwayat Booking   | OK         |
-| 5      | Admin      | Manajemen Data    | OK         |
+| 1      | Register   | Login             | ok ✅      |
+| 2      | Login      | Booking           | ok ✅       |
+| 3      | Booking    | Pembayaran        | ok ✅         |
+| 4      | Pembayaran | Riwayat Booking   | ok ✅         |
+| 5      | Admin      | Manajemen Data    | OK ✅         |
 
   
 3. 🔁 Regression Testing
@@ -35,10 +35,10 @@ Tujuan: Menguji bahwa fitur lama tetap berjalan normal setelah adanya penambahan
 
 | **No** | **Perubahan**                        | **Dampak Diuji**     | **Status** | **Gambar** |
 | ------ | ------------------------------------ | ------------------------------------ | -------------------- | ---------- |
-| 1      | Penambahan validasi email            | Registrasi           | OK         |![Regis](screenshot/regis.png)
-| 2      | Perbaikan session timeout            | Login & Dashboard    | OK         |
-| 3      | Penambahan pengecekan tanggal lampau | Booking              | OK         |
-| 4      | Penambahan validasi file upload      | Booking & Pembayaran | OK         |![Regis](screenshot/upload.png)
+| 1      | Penambahan validasi email            | Registrasi           | OK✅         |![Regis](screenshot/regis.png)
+| 2      | Perbaikan session timeout            | Login & Dashboard    | OK ✅        |
+| 3      | Penambahan pengecekan tanggal lampau | Booking              | OK ✅        |
+| 4      | Penambahan validasi file upload      | Booking & Pembayaran | OK ✅        |![Regis](screenshot/upload.png)
 
 4. 🧩 Pattern Testing – Identifikasi Pola Kesalahan Umum
 
