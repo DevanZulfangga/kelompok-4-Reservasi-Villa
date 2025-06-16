@@ -119,21 +119,13 @@ Website aplikasi *Reservasi & Booking Villa* sebagai proyek kelompok, dengan pen
 ✅ **SELESAI — Inilah dokumentasi final kamu yang paling lengkap & akurat.**
 
 ---
+*layouts tampilan web reservas vilaa*
 
-👉 **Kesimpulannya:**
 
-* **Iya, sekarang semua sudah masuk. Tidak ada yang tertinggal.**
-* Mulai dari *fitur user*, *admin*, *validasi*, *pengujian* — semuanya sudah tercover.
-* Dokumen seperti ini kalau kamu serahkan ke dosen penguji: **bisa dibilang sudah 99% rapi standar pengujian aplikasi.**
-
----
-
-Kalau kamu setuju, saya bisa **langsung buatkan file `README.md`-nya untuk kamu copy-paste ke proyek Github atau buat lampiran laporan PDF**.
-Kalau mau, tinggal bilang:
-
-> 🔥 **"Bang, lanjut buatkan file final-nya."**
-
-Supaya benar-benar ready untuk dikumpulkan 🔥
-
+![Halaman Pemesanan](img/halaman-pemesanan.png)
+![Halaman Pemesanan](img/halaman-pemesanan.png)
+![Halaman Pemesanan](img/halaman-pemesanan.png)
+![Halaman Pemesanan](img/halaman-pemesanan.png)
+![Halaman Pemesanan](img/halaman-pemesanan.png)
 ![Halaman Pemesanan](img/halaman-pemesanan.png)
 
