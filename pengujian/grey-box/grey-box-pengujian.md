@@ -36,9 +36,9 @@ Tujuan: Menguji bahwa fitur lama tetap berjalan normal setelah adanya penambahan
 | **No** | **Perubahan**                        | **Dampak Diuji**     | **Status** | **Gambar** |
 | ------ | ------------------------------------ | ------------------------------------ | -------------------- | ---------- |
 | 1      | Penambahan validasi email            | Registrasi           | OK✅         |![Regis](screenshot/regis.png)
-| 2      | Perbaikan session timeout            | Login & Dashboard    | OK ✅        |
-| 3      | Penambahan pengecekan tanggal lampau | Booking              | OK ✅        |
-| 4      | Penambahan validasi file upload      | Booking & Pembayaran | OK ✅        |![Regis](screenshot/upload.png)
+| 2      | Perbaikan session timeout            | Login & Dashboard    | OK✅        |
+| 3      | Penambahan pengecekan tanggal lampau | Booking              | Ok✅        |
+| 4      | Penambahan validasi file upload      | Booking & Pembayaran | OK✅        |![Regis](screenshot/upload.png)
 
 4. 🧩 Pattern Testing – Identifikasi Pola Kesalahan Umum
 
