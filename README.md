@@ -184,3 +184,6 @@ Kalau mau, tinggal bilang:
 > 🔥 **"Bang, lanjut buatkan file final-nya."**
 
 Supaya benar-benar ready untuk dikumpulkan 🔥
+
+![Halaman Pemesanan](img/halaman-pemesanan.png)
+
