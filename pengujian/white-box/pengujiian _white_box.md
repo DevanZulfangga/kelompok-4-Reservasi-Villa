@@ -73,11 +73,17 @@ Mengidentifikasi jalur logika utama dan alternatif
 Menyusun jalur eksekusi berdasarkan skenario uji
 
 ##🔄 Jalur Logika yang Diuji (Contra flow)
+
+
 💳 Control Flow – Fitur Pemesanan (ASCII Diagram)
 
 ![Halaman validasi](Screenshot/code1.png)
 
+--------------------------------------------------
+
 🧾 Control Flow – Fitur Pembayaran (ASCII Diagram)
+
+
 ![Halaman validasi](Screenshot/code2.png)
 
 Start
