@@ -1,30 +1,51 @@
 # Black Box Test - Reservasi Villa
 
-Metode: Equivalence Partitioning dan Boundary Value Analysis
+### 🔬 Black Box Testing
 
-# LOGIN TEST CASE
+**Oleh:** Devan Zulfangga
 
-| No | Test Case                    | Input Email                                 | Input Password | Expected Output             | Model           |
-| -- | ---------------------------- | ------------------------------------------- | -------------- | --------------------------- | --------------- |
-| 1  | Valid login                  | [Devan@gmail.com](mailto:Devan@gmail.com) | password123    | Login berhasil              | Equivalence     |
-| 2  | Email Kosong              |                            | password123    | Harap isi Email Anda    | Boundary/Robust |
-| 3  | Password Kosong            | [Devan@gmail.com](mailto:Devan@gmail.com) |   | Harap isi pasword Anda  | Boundary/Robust |
-| 4  | Email tidak valid (tanpa @)  | dede.com                             | password123    | Format Email tidak valid   | Equivalence     |
-| 5  | Password salah               | [Devan@gmail.com](mailto:Devan@gmail.com) | 545    | Password salah         | Equivalence     |
+#### 🔧 Pengujian Registrasi & Login:
 
-# REGISTER TEST CASE
+| Skenario                    | Hasil                                             |
+| --------------------------- | ------------------------------------------------- |
+| Form registrasi kosong      | ❌ Notif browser bawaan (required)                 |
+| Email format tidak valid    | ❌ Ditolak oleh sistem                             |
+| Email sudah terdaftar       | ❌ Tidak bisa registrasi                           |
+| Password salah              | ❌ Login gagal                                     |
+| Login dengan akun tidak ada | ❌ Login gagal → SweetAlert "data tidak ditemukan" |
 
-| No | Test Case                    | Email                                 | Password | Expected Output             | Model           |
-| -- | ---------------------------- | ------------------------------------------- | -------------- | --------------------------- | --------------- |
-| 1  | Register Valid                  | [Devan@gmail.com](mailto:Devan@gmail.com) | password123    | Register berhasil              | Equivalence     |
-| 2  | Duplikat Data ( data sudah terdaftar ) |   [Devan@gmail.com](mailto:Devan@gmail.com)  | password123    | Email Telah Terdaftar    | Boundary/Robust |
+#### 🔧 Pengujian Booking & Pembayaran:
 
-# CART PAGE ( PEMBAYARAN) TEST CASE
-| No | Test Case                                 | User    | Payment Method | Expected Output                                         | Model          |
-| -- | ----------------------------------------- | ----------- | -------------- | ------------------------------------------------------- | -------------- |
-| 1  | tanggal booking                  | DEDE   | Transfer Bank           | berhasil menambahkan pesanan | Equivalence    |
-| 2  | Lama sewa                            | DEDE    | Transfer Bank           | berhasil menambahkan pesanan             | Robustness     |
-| 3  | Upload bukti pembayaran | DEDE    |      Transfer Bank     | Pembayaran Berhasil                         | BVA            |
-| 4  | Tidak mengupload bukti pmebayaran               | DEDE | Transfer Bank          | Pembayaran gagal                       | BVA            |
+| Skenario                 | Hasil                             |
+| ------------------------ | --------------------------------- |
+| Form booking kosong      | ❌ SweetAlert "Data belum lengkap" |
+| Upload pembayaran kosong | ❌ SweetAlert "Data belum lengkap" |
+
+#### 🔧 Pengujian Ubah Profil:
+
+| Skenario                             | Hasil                          |
+| ------------------------------------ | ------------------------------ |
+| Form ubah profil kosong/tidak sesuai | ❌ Validasi SweetAlert berhasil |
+
+#### 🔧 Pengujian Lupa Password:
+
+| Skenario                | Hasil                                              |
+| ----------------------- | -------------------------------------------------- |
+| Kirim OTP Email/WA      | ✅ OTP terkirim atau ❌ gagal kirim                  |
+| OTP salah               | ❌ Verifikasi gagal                                 |
+| OTP benar               | ✅ Lanjut reset password                            |
+| Reset password kosong   | ❌ Validasi gagal                                   |
+| Reset password berhasil | ✅ Password berhasil diubah (SweetAlert + redirect) |
+
+#### 🔧 Pengujian Admin Panel:
+
+| Fitur            | Hasil                 |
+| ---------------- | --------------------- |
+| Tambah Admin     | ✅ SweetAlert berhasil |
+| Hapus Admin/User | ✅ SweetAlert berhasil |
+| Tambah Villa     | ✅ SweetAlert berhasil |
+| Hapus Villa      | ✅ SweetAlert berhasil |
+
+---
 
  
