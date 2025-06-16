@@ -5,3 +5,8 @@
 ## Flow Chart Login
 
 ![Login](flowchart/loginflow.jpeg)
+
+
+## Flow Chart Lupa Pasword
+
+![Login](flowchart/Paswordflow.jpeg)
