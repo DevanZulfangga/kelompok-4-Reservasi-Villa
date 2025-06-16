@@ -1,7 +1,7 @@
-## Flow Chart Login & Register
+## Flow Chart Register
 
-![Login&Register](flowchart/L&R.jpeg)
+![Register](flowchart/registerflow.jpeg)
 
-## Flow Chart Pemesanan & Pembayaran
+## Flow Chart Login
 
-![pemesanan&pembayaran](flowchart/p&p.jpeg)
+![Login](flowchart/loginflow.jpeg)
