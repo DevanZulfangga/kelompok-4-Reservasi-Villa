@@ -6,7 +6,7 @@ Kode terdapat pada: `login.php`
 ## 🧠 Metodologi
 Testing dilakukan dengan pendekatan **desk checking** dan **white box**, dengan menelusuri logika program dan semua percabangan `if`.
 
-## 🔁 Jalur Logika yang Diuji
+## 🔁 Jalur Logika yang Diuji Desk checking
 
 | No | Input Username       | Input Password | Jalur Eksekusi                                                                 | Output                      |
 |----|----------------------|----------------|--------------------------------------------------------------------------------|-----------------------------|
