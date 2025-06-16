@@ -33,8 +33,8 @@ Tujuan: Menguji integrasi antar modul, apakah data antar modul saling terhubung 
 
 Tujuan: Menguji bahwa fitur lama tetap berjalan normal setelah adanya penambahan/modifikasi fitur baru.
 
-| **No** | **Perubahan**                        | **Dampak Diuji**     | **Status** |
-| ------ | ------------------------------------ | -------------------- | ---------- |
+| **No** | **Perubahan**                        | **Dampak Diuji**     | **Status** | **Gambar** |
+| ------ | ------------------------------------ | ------------------------------------ | -------------------- | ---------- |
 | 1      | Penambahan validasi email            | Registrasi           | OK         |
 | 2      | Penambahan validasi file upload      | Booking & Pembayaran | OK         |
 | 3      | Penambahan pengecekan tanggal lampau | Booking              | OK         |
