@@ -68,32 +68,6 @@ Website aplikasi *Reservasi & Booking Villa* sebagai proyek kelompok, dengan pen
 
 ---
 
-### 🔬 White Box Testing
-
-**Oleh:** Sammun Hakeki Muchlis
-
-* Desk Checking (manual code review)
-* Code Walkthrough
-* Formal Inspection
-* Control Flow Testing
-* Data Flow Testing
-* Basic Path Testing
-* Loop Testing
-
----
-
-### 🔬 Grey Box Testing
-
-**Oleh:** Muhamad Nabil Arrafi
-
-* Manipulasi data user & booking internal
-* Edit metode pembayaran melalui UI
-* Validasi DOM booking
-* Simulasi gagal kirim OTP email/WA
-* Manipulasi data storage lokal (jika ada)
-
----
-
 ## ⚙️ Teknologi Digunakan
 
 * PHP + MySQL (Backend)
