@@ -10,3 +10,8 @@
 ## Flow Chart Lupa Pasword
 
 ![Login](flowchart/Paswordflow.jpeg)
+
+
+## Flow Chart Lupa Pasword
+
+![Login](flowchart/Paswordflow.jpeg)
