@@ -1,13 +1,19 @@
 # Gray Box Testing
 
 
-1. Pengujian booking villa
+1. Orthogolanal Array Testing 
 
-| No | Tase Case              | Aksi                                      | Validasi UI                                                    | Ekspektasi                                           |
-| -- | ---------------------- | ----------------------------------------- | -------------------------------------------------------------- | --------------------------------------------------------- |
-| 1  | Input tanggal kosong   | Klik tombol "Pesan" tanpa isi tanggal  | Muncul alert SweetAlert "Gagal!" | Muncul peringatan Gagal |
-| 2  | Input Lama Sewa kosong         | Klik tombol "Pesan" tanpa isi Lama Sewa | Muncul alert SweetAlert "Gagal!"                              | Muncul peringatan Gagal                         |
-| 3  | Input Tanggal & Lama sewa diisi       | Klik tombol "Pesan" | Alert: "Berhasil "                            | Muncul peringatan "Berhasil" pindah ke pembayaran                          |
+| No | Email              | Password                                      | Tanggal Booking                                    | File upload                                           | Hasil             |
+| -- | ---------------------- | ----------------------------------------- | -------------------------------------------------------------- | --------------------------------------------------------- |--------------------------------------------------------- |
+| 1  | Valid   | valid  |     valid              | Valid (.jpg) | Booking Sukses
+| 2  | Kosong  | Valid  |     Valid               | Valid (.jpg) | Eror:Email Wajid diisi
+| 3  | Valid   | Kosong | Valid | Valid (.jpg) | Eror:password wajib diisi
+| 4  | Valid   | Kosong | Valid | Valid (.jpg) | Eror:password wajib diisi
+| 5  | Valid   | Kosong | Valid | Valid (.exe) | Eror:File ditolak
+| 6  | InValid | Kosong | Valid | Valid (.jpg) | Eror:Format email salah
+
+
+
 
 2. Pengujian Pembayaran villa
 
