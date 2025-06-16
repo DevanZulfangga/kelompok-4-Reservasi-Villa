@@ -1,2 +1,2 @@
+![Halaman validasi](Screenshot/whitebox1.png)
 
-![Halaman validasi](pengujian/white-box/Screenshot/whitebox1.png)
