@@ -119,12 +119,14 @@ Website aplikasi *Reservasi & Booking Villa* sebagai proyek kelompok, dengan pen
 
 ---
 *layouts tampilan web reservas vilaa*
+![Halaman Login](assets/masuk.jpeg)
 
+![Halaman Register](assets/Daftar.jpeg)
 
-![Halaman Pemesanan](img/masuk.jpg)
-![Halaman Pemesanan](img/halaman-pemesanan.png)
-![Halaman Pemesanan](img/halaman-pemesanan.png)
-![Halaman Pemesanan](img/halaman-pemesanan.png)
-![Halaman Pemesanan](img/halaman-pemesanan.png)
-![Halaman Pemesanan](img/halaman-pemesanan.png)
+![Halaman Utama](assets/dasbor.jpeg)
+
+![Halaman Pemesanan](assets/Boking.jpeg)
+
+![Halaman Pembayaran](assets/pembayaran.jpeg)
+
 
