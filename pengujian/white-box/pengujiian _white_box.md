@@ -21,4 +21,48 @@ Testing dilakukan dengan pendekatan **desk checking** dan **white box**, dengan 
 
 ---
 
+## 📘  Code Walkthrough - Reset Password
+
+### File yang Diuji:
+- lupa_sandi.php
+- reset_password.php
+- functions.php (fungsi OTP dan hashing password)
+
+### Tujuan:
+Menelusuri alur logika fitur reset password, mengidentifikasi jalur normal dan error, serta mengecek konsistensi input–proses–output.
+
+### Jalur yang Ditelusuri:
+1. Input email kosong
+2. Email tidak ditemukan
+3. Kirim OTP sukses
+4. Input OTP salah
+5. Input password baru kosong
+6. Password hash berhasil & redirect
+
+### Temuan:
+- Validasi sudah baik
+- Tidak ada celah SQL injection (karena `mysqli_prepare`)
+- Tidak ada error handling saat query gagal (bisa ditambahkan)
+
+--
+
+📋 Formal Inspections - Reset Password
+Tujuan:
+Melakukan pemeriksaan sistematis terhadap kode reset_password.php, lupa_sandi.php, dan functions.php untuk mengecek kesesuaian dengan standar keamanan, struktur logika, dan kelengkapan validasi input/output.
+
+| No | Komponen yang Diperiksa              | Status | Catatan                                                               |
+| -- | ------------------------------------ | ------ | --------------------------------------------------------------------- |
+| 1  | Validasi input email                 | ✅      | Sudah menggunakan `FILTER_VALIDATE_EMAIL`                             |
+| 2  | Validasi OTP                         | ✅      | Dicek di database berdasarkan email + OTP                             |
+| 3  | Validasi password baru               | ✅      | Password tidak boleh kosong                                           |
+| 4  | Hashing password                     | ✅      | Menggunakan `password_hash()`                                         |
+| 5  | SQL injection prevention             | ⚠️     | Sebagian query masih pakai raw SQL, sebaiknya semua pakai `prepare()` |
+| 6  | Cek ketersediaan user sebelum update | ✅      | Email diverifikasi sebelum proses OTP                                 |
+| 7  | Feedback error user-friendly         | ✅      | Sudah pakai SweetAlert (user-friendly)                                |
+| 8  | Redirect setelah sukses              | ✅      | Redirect ke `login.php` setelah reset sukses                          |
+
+
+
+
+
 
