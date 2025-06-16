@@ -45,7 +45,7 @@
 
 | No | Test Case         |  Input Data Lainnya     | Expected Output     | Model                    |
 | -- | ----------------- |  ---------------------- | ------------------- | ------------------------ |
-| 14 | Upload file valid |  file.jpg (image valid) | Upload berhasil     | Equivalence Partitioning |
+| 14 | Upload file valid |  file.jpg (image valid) | pembayaran berhasil     | Equivalence Partitioning |
 | 15 | Upload file salah |  file.exe (bukan image) | Error: File ditolak | Robustness Testing       |
 
 ---
