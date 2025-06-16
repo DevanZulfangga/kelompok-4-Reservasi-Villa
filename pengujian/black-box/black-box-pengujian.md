@@ -4,15 +4,14 @@
 
 **Oleh:** Devan Zulfangga
 
-#### 🔧 Pengujian Registrasi & Login:
+#### 🔧 Pengujian Registrasi :
 
-| Skenario                    | Hasil                                             |
-| --------------------------- | ------------------------------------------------- |
-| Form registrasi kosong      | ❌ Notif browser bawaan (required)                 |
-| Email format tidak valid    | ❌ Ditolak oleh sistem                             |
-| Email sudah terdaftar       | ❌ Tidak bisa registrasi                           |
-| Password salah              | ❌ Login gagal                                     |
-| Login dengan akun tidak ada | ❌ Login gagal → SweetAlert "data tidak ditemukan" |
+| No | Test Case          | Input Email                                 | Input Data Lainnya           | Expected Output           | Model                    |
+| -- | ------------------ | ------------------------------------------- | ---------------------------- | ------------------------- | ------------------------ |
+| 1  | Registrasi valid   | [user@example.com](mailto:user@example.com) | Password valid, data lengkap | Registrasi berhasil       | Equivalence Partitioning |
+| 2  | Email kosong       | (kosong)                                    | Password valid, data lengkap | Error: Email wajib diisi  | Boundary Value Analysis  |
+| 3  | Format email salah | userexample.com                             | Password valid               | Error: Format email salah | Equivalence Partitioning |
+
 
 #### 🔧 Pengujian Booking & Pembayaran:
 
