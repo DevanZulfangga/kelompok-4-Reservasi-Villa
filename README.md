@@ -118,15 +118,25 @@ Website aplikasi *Reservasi & Booking Villa* sebagai proyek kelompok, dengan pen
 ✅ **SELESAI — Inilah dokumentasi final kamu yang paling lengkap & akurat.**
 
 ---
-*layouts tampilan web reservas vilaa*
-![Halaman Login](assets/masuk.jpeg)
 
-![Halaman Register](assets/Daftar.jpeg)
 
-![Halaman Utama](assets/dasbor.jpeg)
 
+## Tampilan Halaman
+
+### 1. Halaman Login
+![Halaman Login](assets/Login.jpeg)
+
+### 2. Halaman Register
+![Halaman Register](assets/Register.jpeg)
+
+### 3. Halaman Dashboard
+![Halaman Dashboard](assets/Dashboard.jpeg)
+
+### 4. Halaman Pemesanan (Booking)
 ![Halaman Pemesanan](assets/Boking.jpeg)
 
-![Halaman Pembayaran](assets/pembayaran.jpeg)
+### 5. Halaman Pembayaran
+![Halaman Pembayaran](assets/pemabayarn.jpeg)
+
 
 
