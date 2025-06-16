@@ -23,11 +23,6 @@ Testing dilakukan dengan pendekatan **desk checking** dan **white box**, dengan 
 
 ## 📘  Code Walkthrough - Reset Password
 
-### File yang Diuji:
-- lupa_sandi.php
-- reset_password.php
-- functions.php (fungsi OTP dan hashing password)
-
 ### Tujuan:
 Menelusuri alur logika fitur reset password, mengidentifikasi jalur normal dan error, serta mengecek konsistensi input–proses–output.
 
@@ -46,7 +41,8 @@ Menelusuri alur logika fitur reset password, mengidentifikasi jalur normal dan e
 
 --
 
-📋 Formal Inspections - Reset Password
+## 📋 Formal Inspections - Reset Passwor
+
 Tujuan:
 Melakukan pemeriksaan sistematis terhadap kode reset_password.php, lupa_sandi.php, dan functions.php untuk mengecek kesesuaian dengan standar keamanan, struktur logika, dan kelengkapan validasi input/output.
 
@@ -62,7 +58,32 @@ Melakukan pemeriksaan sistematis terhadap kode reset_password.php, lupa_sandi.ph
 | 8  | Redirect setelah sukses              | ✅      | Redirect ke `login.php` setelah reset sukses                          |
 
 
+📘 Laporan White Box Testing: Fitur Pemesanan & Pembayaran
 
+🎯 Tujuan:
+Melakukan pengujian white box pada fitur pemesanan dan pembayaran menggunakan metode:
+Control Flow Testing
+Basic Path Testing
+
+🔍 Metodologi:
+Testing dilakukan dengan pendekatan desk checking dan white box, dengan:
+Menelusuri struktur kontrol program (if, while, input → proses → output)
+Mengidentifikasi jalur logika utama dan alternatif
+Menyusun jalur eksekusi berdasarkan skenario uji
+
+🔄 Jalur Logika yang Diuji (Control Flow)
+💳 Jalur Logika Pemesanan
+| No | Skenario Input          | Jalur Eksekusi                        | Output                 |
+| -- | ----------------------- | ------------------------------------- | ---------------------- |
+| 1  | Semua input kosong      | Validasi gagal → redirect kembali     | ❌ Form belum lengkap   |
+| 2  | Input lengkap dan valid | Simpan ke DB → redirect ke pembayaran | ✅ Lanjut ke pembayaran |
+
+
+🧾 Jalur Logika Pembayaran
+| No | Skenario Input    | Jalur Eksekusi                                                         | Output                            |
+| -- | ----------------- | ---------------------------------------------------------------------- | --------------------------------- |
+| 1  | Upload kosong     | Validasi gagal → redirect kembali                                      | ❌ Bukti pembayaran belum diunggah |
+| 2  | Upload file valid | Simpan file → update status reservasi → redirect ke halaman konfirmasi | ✅ Pembayaran berhasil dikirim     |
 
 
 
