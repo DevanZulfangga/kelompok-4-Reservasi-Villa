@@ -13,37 +13,39 @@
 | 3  | Format email salah | userexample.com                             | Password valid               | Error: Format email salah | Equivalence Partitioning |
 
 
-#### 🔧 Pengujian Booking & Pembayaran:
+#### 🔧 Pengujian Login:
 
-| Skenario                 | Hasil                             |
-| ------------------------ | --------------------------------- |
-| Form booking kosong      | ❌ SweetAlert "Data belum lengkap" |
-| Upload pembayaran kosong | ❌ SweetAlert "Data belum lengkap" |
+| No | Test Case           | Input Email                                 | Input Password | Expected Output          | Model                    |
+| -- | ------------------- | ------------------------------------------- | -------------- | ------------------------ | ------------------------ |
+| 4  | Login valid         | [user@example.com](mailto:user@example.com) | password123    | Login berhasil           | Equivalence Partitioning |
+| 5  | Password salah      | [user@example.com](mailto:user@example.com) | wrongpass      | Error: Login gagal       | Equivalence Partitioning |
+| 6  | Email kosong        | (kosong)                                    | password123    | Error: Email wajib diisi | Boundary Value Analysis  |
+| 7  | SQL Injection login | ' OR 1=1 --                                 | password123    | Error / Ditolak          | Robustness Testing       |
 
-#### 🔧 Pengujian Ubah Profil:
 
-| Skenario                             | Hasil                          |
-| ------------------------------------ | ------------------------------ |
-| Form ubah profil kosong/tidak sesuai | ❌ Validasi SweetAlert berhasil |
+#### 🔧 Pengujian Pemesanan / Booking:
 
-#### 🔧 Pengujian Lupa Password:
+| No | Test Case             |  Input Data Lainnya       | Expected Output              | Model                    |
+| -- | --------------------- |  ------------------------ | ---------------------------- | ------------------------ |
+| 8  | Booking valid         |  Tanggal valid, jam valid | Booking berhasil             | Equivalence Partitioning |
+| 9  | Tanggal lampau        |  Tanggal lampau           | Error: Tanggal tidak valid   | Boundary Value Analysis  |
+| 10 | Tanggal kosong        |  (kosong)                 | Error: Tanggal wajib diisi   | Boundary Value Analysis  |
+| 11 | Lama sewa 0 jam       |  0 jam                    | Error: Lama sewa tidak valid | Boundary Value Analysis  |
+| 12 | Booking SQL Injection |  SQL script di input      | Error / Ditolak              | Robustness Testing       |
 
-| Skenario                | Hasil                                              |
-| ----------------------- | -------------------------------------------------- |
-| Kirim OTP Email/WA      | ✅ OTP terkirim atau ❌ gagal kirim                  |
-| OTP salah               | ❌ Verifikasi gagal                                 |
-| OTP benar               | ✅ Lanjut reset password                            |
-| Reset password kosong   | ❌ Validasi gagal                                   |
-| Reset password berhasil | ✅ Password berhasil diubah (SweetAlert + redirect) |
 
-#### 🔧 Pengujian Admin Panel:
+#### 🔧 Pengujian pembayaran:
 
-| Fitur            | Hasil                 |
-| ---------------- | --------------------- |
-| Tambah Admin     | ✅ SweetAlert berhasil |
-| Hapus Admin/User | ✅ SweetAlert berhasil |
-| Tambah Villa     | ✅ SweetAlert berhasil |
-| Hapus Villa      | ✅ SweetAlert berhasil |
+| No | Test Case        | Input Data Lainnya       | Expected Output     | Model                    |
+| -- | ---------------- | ------------------------ | ------------------- | ------------------------ |
+| 13 | Pembayaran valid | Upload bukti bayar valid | Konfirmasi berhasil | Equivalence Partitioning |
+
+#### 🔧 Pengujian Upload File (Bukti Pembayaran & Lampiran):
+
+| No | Test Case         |  Input Data Lainnya     | Expected Output     | Model                    |
+| -- | ----------------- |  ---------------------- | ------------------- | ------------------------ |
+| 14 | Upload file valid |  file.jpg (image valid) | Upload berhasil     | Equivalence Partitioning |
+| 15 | Upload file salah |  file.exe (bukan image) | Error: File ditolak | Robustness Testing       |
 
 ---
 
