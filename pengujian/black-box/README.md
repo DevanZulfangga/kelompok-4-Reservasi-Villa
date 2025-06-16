@@ -12,6 +12,6 @@
 ![Login](flowchart/Paswordflow.jpeg)
 
 
-## Flow Chart Lupa Pasword
+## Flow Chart Pemesanan
 
-![Login](flowchart/Paswordflow.jpeg)
+![Login](flowchart/Pemesananflow.jpeg)
