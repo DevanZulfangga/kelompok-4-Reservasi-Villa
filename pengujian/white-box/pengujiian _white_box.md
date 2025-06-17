@@ -77,14 +77,14 @@ Menyusun jalur eksekusi berdasarkan skenario uji
 
 💳 Control Flow – Fitur Pemesanan (ASCII Diagram)
 
-![Halaman validasi](Screenshot/code1.png)
+![Halaman validasi](Screenshot/code2.png)
 
 --------------------------------------------------
 
 🧾 Control Flow – Fitur Pembayaran (ASCII Diagram)
 
+![Halaman validasi](Screenshot/code1.png)
 
-![Halaman validasi](Screenshot/code2.png)
 
 Start
   ↓
